@@ -3,12 +3,17 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  background-color: rgb(241, 245, 247);
+}
 
-/* Navigation Bar (Navbar) */
-.header-section {
+.header-section,
+.hero-banner {
   max-width: 1140px;
   margin: 0 auto;
 }
+/* Navigation Bar (Navbar) */
+
 .header-section {
   display: flex;
   justify-content: space-between;
@@ -36,4 +41,39 @@ nav ul li a {
 .brand {
   color: deeppink;
   font-size: 55px;
+}
+
+/* Hero Banner */
+.hero-banner {
+  height: 430px;
+  background-image: url("https://imgs.search.brave.com/ho4pRhyKacLbIf4wp9ckHDSS07mCjm386J1rQhlialM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJhY2Nlc3Mu/Y29tL2Z1bGwvMzEy/MTcuanBn");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  margin-top: 50px;
+}
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.banner h1 {
+  color: white;
+  font-size: 40px;
+  padding-top: 100px;
+}
+.banner p {
+  font-size: 16px;
+  color: white;
+  padding: 0 50px;
+}
+.banner button {
+  height: 35px;
+  width: 120px;
+  border: none;
+  font-size: 15px;
+  background-color: rgb(232, 229, 229);
 }
